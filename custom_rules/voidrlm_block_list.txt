@@ -1,1 +1,4 @@
-*://ads.linkedin.com/*
+||ads.linkedin.com^
+||analytics.pointdrive.linkedin.com^
+
+
