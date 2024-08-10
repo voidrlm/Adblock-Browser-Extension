@@ -7,6 +7,8 @@ const urls = [
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_adservers_popup.txt",
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty.txt",
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty_popup.txt",
+  //CUSTOM
+  "https://raw.githubusercontent.com/voidrlm/Adblock-Browser-Extension/main/custom_rules/voidrlm_block_list.txt",
 ];
 
 async function fetchAndCombineRules() {
