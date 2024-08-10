@@ -1,5 +1,6 @@
 const urls = [
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty_popup.txt",
 ];
 
 async function fetchAndCombineRules() {
