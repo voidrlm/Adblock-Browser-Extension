@@ -1,4 +1,6 @@
-const urls = [];
+const urls = [
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+];
 
 async function fetchAndCombineRules() {
   try {
