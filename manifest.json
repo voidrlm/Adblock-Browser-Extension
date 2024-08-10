@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AdBlock Extension",
+  "version": "1.0",
+  "description": "Blocks ads without impacting performance.",
+  "permissions": ["declarativeNetRequest"],
+  "author": "voidrlm",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "host_permissions": ["*://*/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
