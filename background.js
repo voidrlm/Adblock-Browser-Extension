@@ -3,6 +3,10 @@ const urls = [
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty_popup.txt",
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers_popup.txt",
   "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt",
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_adservers.txt",
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_adservers_popup.txt",
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty.txt",
+  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty_popup.txt",
 ];
 
 async function fetchAndCombineRules() {
