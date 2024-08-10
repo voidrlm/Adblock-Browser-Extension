@@ -1,13 +1,4 @@
 const urls = [
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty_popup.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers_popup.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_adservers.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_adservers_popup.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty.txt",
-  "https://raw.githubusercontent.com/easylist/easylist/master/easylist/adult_thirdparty_popup.txt",
-  //CUSTOM
   "https://raw.githubusercontent.com/voidrlm/Adblock-Browser-Extension/main/custom_rules/voidrlm_block_list.txt",
 ];
 
@@ -30,9 +21,18 @@ async function fetchAndCombineRules() {
       action: { type: "block" },
       condition: { urlFilter: filter },
     }));
-
-    // Update rules in chunks
-    updateRulesInChunks(rules);
+    console.log(rules);
+    chrome.declarativeNetRequest.updateDynamicRules(
+      {
+        addRules: rules,
+        removeRuleIds: [],
+      },
+      () => {
+        if (chrome.runtime.lastError) {
+          console.error(chrome.runtime.lastError.message);
+        }
+      }
+    );
   } catch (error) {
     console.error("Error fetching adblock lists:", error);
   }
