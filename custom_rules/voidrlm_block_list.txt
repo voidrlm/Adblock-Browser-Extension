@@ -1,4 +1,3 @@
-||ads.linkedin.com^
 ||analytics.pointdrive.linkedin.com^
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.s3.amazonaws.com^
