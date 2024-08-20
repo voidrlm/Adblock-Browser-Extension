@@ -19,6 +19,5 @@ fetch(
       addRules: rules,
       removeRuleIds: rules.map((rule) => rule.id),
     });
-    console.log(rules);
   })
   .catch((error) => console.error("Error fetching adblock list:", error));
