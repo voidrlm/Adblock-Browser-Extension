@@ -3,7 +3,7 @@
   "name": "AdBlock Extension",
   "version": "1.0",
   "description": "Blocks ads without impacting performance.",
-  "permissions": ["declarativeNetRequest"],
+  "permissions": ["declarativeNetRequest", "scripting"],
   "author": "voidrlm",
   "background": {
     "service_worker": "background.js"
@@ -11,6 +11,12 @@
   "icons": {
     "48": "icon.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/youtube.js", "content.js"]
+    }
+  ],
   "host_permissions": ["*://*/*"],
   "declarative_net_request": {
     "rule_resources": [
