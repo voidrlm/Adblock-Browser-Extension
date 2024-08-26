@@ -35,6 +35,12 @@ async function removeAds() {
     '[class*="ad-container"]',
     '[aria-label*="advertisement"]',
     '[class*="adnative"]',
+    '[class*=".wps-player__happy-inside"]',
+    ".sidebar-ads",
+    ".video-archive-ad",
+    ".playerAd",
+    ".block-pub-side",
+    "#player-advertising",
   ];
   elementsToHide.forEach((selector) => {
     document.querySelectorAll(selector).forEach((element) => element.remove());
