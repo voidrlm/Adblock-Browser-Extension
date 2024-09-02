@@ -55,6 +55,7 @@ async function removeAds() {
     "#ad-footer",
     "#ad-header",
     ".ad-background",
+    ".video-archive-ad",
   ];
 
   elementsToHide.forEach((selector) => {
