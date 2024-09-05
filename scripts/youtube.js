@@ -206,6 +206,7 @@ function ytBlocker() {
     const style = document.createElement("style");
 
     style.textContent = `
+            ytd-engagement-panel-section-list-renderer,
             ytd-action-companion-ad-renderer,
             ytd-display-ad-renderer,
             ytd-video-masthead-ad-advertiser-info-renderer,
