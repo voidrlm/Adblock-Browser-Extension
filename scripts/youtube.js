@@ -38,8 +38,9 @@ function ytBlocker() {
     ".yt-playability-error-supported-renderers"
   );
   if (adBlockerWarningInner) {
-    if (adBlockerWarningInner) {
-      adBlockerWarningInner.remove();
+    adBlockerWarningInner.remove();
+    const player = document.querySelector("#movie_player");
+    if (document.getElementsByTagName("ytd-shorts").length === 0) {
       location.reload();
     }
   }
