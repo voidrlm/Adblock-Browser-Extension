@@ -128,7 +128,6 @@ style.textContent = `
     ytd-reel-video-renderer:has(.ytd-ad-slot-renderer),
     tp-yt-paper-dialog:has(#feedback.ytd-enforcement-message-view-model),
     .yt-mealbar-promo-renderer,
-    ytd-engagement-panel-section-list-renderer,
     ytd-action-companion-ad-renderer,
     ytd-display-ad-renderer,
     ytd-video-masthead-ad-advertiser-info-renderer,
