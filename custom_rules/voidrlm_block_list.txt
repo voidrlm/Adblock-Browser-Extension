@@ -67,5 +67,8 @@
 ||static.hotjar.com^
 ||js.sentry-cdn.com^
 ||bugsnag.min.js^
+||insights.hotjar.com^
+||surveys.hotjar.com^
+||careers.hotjar.com^
 
 
