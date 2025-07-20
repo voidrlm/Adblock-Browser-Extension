@@ -163,6 +163,7 @@ style.textContent = `
     ytd-video-masthead-ad-primary-video-renderer,
     ytd-in-feed-ad-layout-renderer,
     yt-about-this-ad-renderer,
+    ytp-ad-module,
     ytd-statement-banner-renderer,
     ytd-banner-promo-renderer-background,
     statement-banner-style-type-compact,
