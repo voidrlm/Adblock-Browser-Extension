@@ -66,5 +66,6 @@
 ||analytics-api.samsunghealthcn.com^
 ||static.hotjar.com^
 ||js.sentry-cdn.com^
+||bugsnag.min.js^
 
 
