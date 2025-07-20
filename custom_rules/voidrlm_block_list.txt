@@ -100,3 +100,5 @@
 ||metrics.data.hicloud.com^
 ||metrics2.data.hicloud.com^
 ||samsung-com.112.2o7.net^
+||analytics.yahoo.com^
+||google-analytics.com^
