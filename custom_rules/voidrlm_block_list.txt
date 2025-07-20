@@ -64,5 +64,7 @@
 ||notes-analytics-events.apple.com^
 ||smetrics.samsung.com^
 ||analytics-api.samsunghealthcn.com^
+||static.hotjar.com^
+||js.sentry-cdn.com^
 
 
